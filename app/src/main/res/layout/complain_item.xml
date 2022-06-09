@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_16sdp"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:layout_marginEnd="@dimen/_16sdp"
+    android:layout_marginBottom="@dimen/_7sdp"
+    android:background="@drawable/blog_item_bg"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/complainCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/listComplainImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/placeholder_image" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <View
+        android:id="@+id/imageCoverView"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/image_cover"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/complainCard"
+        app:layout_constraintEnd_toEndOf="@id/complainCard"
+        app:layout_constraintStart_toStartOf="@id/complainCard">
+
+    </View>
+
+
+    <TextView
+        android:id="@+id/listComplainLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:padding="@dimen/_2sdp"
+        android:text="Location"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageCoverView" />
+
+    <!--  <TextView
+          app:layout_constraintTop_toBottomOf="@id/listBlogTitle"
+          app:layout_constraintStart_toStartOf="parent"
+          android:id="@+id/listAuthor"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/_10sdp"
+          android:layout_marginStart="@dimen/_7sdp"
+          android:fontFamily="@font/ubuntu_regular"
+          android:text="@string/author_developers"
+          android:textColor="@color/colorAsh"
+          android:textSize="@dimen/_14ssp"/>-->
+
+    <TextView
+        android:id="@+id/listComplainDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/ubuntu_regular"
+        android:text="blog description"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/listComplainLocation"
+        app:lineHeight="28dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/colorAsh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/listComplainDesc">
+
+    </View>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

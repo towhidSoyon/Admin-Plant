@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginTop="-5dp"
+        android:background="@drawable/logo_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/back"
+        android:backgroundTint="@color/Black"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addImageSliderButton"
+        android:layout_width="@dimen/_282sdp"
+        android:layout_height="@dimen/_39sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/button_bg_3"
+        android:fontFamily="@font/ubuntu_medium"
+        android:paddingStart="@dimen/_15sdp"
+        android:text="Add Image to Image Slider"
+        android:textAllCaps="false"
+        android:textAlignment="textStart"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/backArrow"
+        tools:ignore="RtlSymmetry">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/complainHandle"
+        android:layout_width="@dimen/_282sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:background="@drawable/button_bg_3"
+        android:fontFamily="@font/ubuntu_medium"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="Complain Handle"
+        android:textAllCaps="false"
+        android:textAlignment="textStart"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addImageSliderButton"
+        tools:ignore="RtlSymmetry">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/contactsHandle"
+        android:layout_width="@dimen/_282sdp"
+        android:layout_height="@dimen/_39sdp"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:background="@drawable/button_bg_3"
+        android:fontFamily="@font/ubuntu_medium"
+        android:paddingStart="@dimen/_15sdp"
+        android:text="Contacts Handle"
+        android:textAllCaps="false"
+        android:textAlignment="textStart"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/complainHandle"
+        tools:ignore="RtlSymmetry">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/blogButton"
+        android:layout_width="@dimen/_282sdp"
+        android:layout_height="@dimen/_39sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/button_bg_3"
+        android:fontFamily="@font/ubuntu_medium"
+        android:paddingStart="@dimen/_15sdp"
+        android:text="Blog"
+        android:textAllCaps="false"
+        android:textAlignment="textStart"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contactsHandle"
+        tools:ignore="RtlSymmetry">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/userControlButton"
+        android:layout_width="@dimen/_282sdp"
+        android:layout_height="@dimen/_39sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/button_bg_3"
+        android:fontFamily="@font/ubuntu_medium"
+        android:paddingStart="@dimen/_15sdp"
+        android:text="User Control"
+        android:textAllCaps="false"
+        android:textAlignment="textStart"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/blogButton"
+        tools:ignore="RtlSymmetry">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
